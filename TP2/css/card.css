@@ -6,16 +6,40 @@
     padding: 0;
 }
 
-.genders .suggestion{
+.genders-suggestion{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    row-gap: 15px;
+
+    padding-top: 20px;
+   
 }
 
-p{
-    color: white;
+.genre-section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    padding-bottom: 20px;
+}
+
+.cards-carrusel{
+    display: flex;
+    flex-direction: row;
+    column-gap: 34px;
+}
+
+.body1{
+   color: white;
+   font-family: Roboto;
+   font-size: 1rem;
+   white-space:nowrap;
+   overflow:hidden;
+   text-overflow:ellipsis;
+   max-width:220px;
 }
 
 .card{
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     background-color: #484848;
@@ -28,7 +52,6 @@ p{
     position: relative;
     display: inline-block;
     height: 123px;
-    border-radius: 8px;
     overflow: hidden; /*recorta o esconde todo lo que sobre salga de la vision de imagen*/
 }
 
@@ -80,7 +103,7 @@ p{
 .btn-option-card{
     position: absolute; 
     left: 180px;
-    top: 14px; 
+    top: 12px; 
     height: 40px;
     width: 40px;
     background-color: transparent;
